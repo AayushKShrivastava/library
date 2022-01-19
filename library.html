@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./library.js" defer></script>
+    <link rel="stylesheet" href="./library.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Library</h1>
+        <button class="newBook">Add New Book</button>
+    </div>
+    <div class="content">
+        <h2>Books</h2>
+        <div class='books'></div>
+    </div>
+    <div class="form">
+        <div class="head">Please Enter Book Details</div>
+        <div class="info">
+            <div>
+                <label>Title</label>
+                <input class='newTitle' type="text">
+            </div>
+            <div>
+                <label>Author</label>
+                <input class='newAuthor' type="text">
+            </div>
+            <div>
+                <label>Pages</label>
+                <input class='newPages' type="number" min="0">
+            </div>
+        </div>
+        <div class="foot">
+            <div class="isRead">
+                <div>Have you read it?</div>
+                <input class='readStatus' type="checkbox">
+            </div>
+            <div class="button">
+                <button class="cancel">Cancel</button>
+                <button class="add">Add</button>
+            </div>
+        </div>
+    </div>
+    <div id = "overlay"></div>
+</body>
+</html>

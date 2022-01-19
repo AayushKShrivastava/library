@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    background-color: grey;
+    height:100vh;
+}
+
+.header{
+    height: 100px;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1{
+    margin: 0;
+    color: blanchedalmond;
+    font-size: 4rem;
+    font-family:'Times New Roman', Times, serif;
+    flex-shrink: 1;
+}
+
+.newBook{
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    color: white;
+    right: 2%;
+    margin-top: auto;
+    font-size: 2rem;
+    background-color: rgb(109, 221, 109);
+    font-weight: bold;
+    flex-shrink: 1;
+    border-radius: 2px;
+    box-shadow: 5px 5px 4px #888888;
+}
+
+h2{
+    margin: 10px;
+    font-size: 3rem;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.books{
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+.book{
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 300px;
+    width: 250px;
+    background-color: honeydew;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.bookInfo{
+    height: 80%;
+    background-color: rgb(113, 224, 113);
+    padding: 5px;
+    color: rgb(231, 71, 71);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.action{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5) ;
+    color: red;
+}
+
+.read{
+    display: flex;
+}
+
+.remove{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+.form{
+    box-sizing: border-box;
+    transform: translate(-50%, -50%) scale(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(155, 236, 155);
+    transition: 25ms ease-in-out;
+    z-index: 15;
+    width: 40%;
+    height: 60%;
+    max-width: 80%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 3px;
+}
+
+.head{
+    font-size: 3rem;
+    align-self:center;
+}
+
+.info{
+    background-color: aliceblue;
+    padding: 3rem;
+}
+
+.info div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;
+}
+
+input{
+    width:75%;
+    padding: 0.5rem;
+    font-size: medium;
+}
+
+.foot{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.isRead{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.button{
+    display: flex;
+    gap: 10px;
+    width: 120px;
+    justify-content: flex-end;
+}
+
+.button button{
+    width: 60px;
+    background-color: aliceblue;
+}
+
+.form.active{
+    transform:translate(-50%, -50%) scale(1);
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 250ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 10;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
