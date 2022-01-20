@@ -91,7 +91,7 @@ function createCard(lastIndex){
     removeB.value = lastIndex;
     action.appendChild(removeB);
     remove = document.querySelectorAll('.remove'); 
-    removeBook(book.id);
+    removeBook();
 }
 
 function Book(title, author, pages, read){
@@ -107,7 +107,7 @@ function Book(title, author, pages, read){
 function removeBook(){
     remove.forEach((button)=>{
         button.addEventListener('click', ()=>{
-            const book = document.getElementById(book.id);
+            const book = document.getElementById(button.value);
             myLibrary.splice(button.value, 1);
             books.removeChild(book);
             remove = document.querySelectorAll('.remove'); 

@@ -31,11 +31,15 @@ h1{
     right: 2%;
     margin-top: auto;
     font-size: 2rem;
-    background-color: rgb(109, 221, 109);
+    background-color: rgb(113, 224, 113);
     font-weight: bold;
     flex-shrink: 1;
     border-radius: 2px;
-    box-shadow: 5px 5px 4px #888888;
+    box-shadow: 3px 3px 2px #888888;
+}
+
+.newBook:hover{
+    transform: scale(0.98);
 }
 
 h2{
@@ -67,13 +71,17 @@ h2{
 
 .bookInfo{
     height: 80%;
-    background-color: rgb(113, 224, 113);
+    background-color: rgb(109, 221, 109);
     padding: 5px;
     color: rgb(231, 71, 71);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.bookInfo:hover{
+    transform: scale(0.98);
 }
 
 .action{
@@ -96,6 +104,10 @@ h2{
     background-color: red;
     border-radius: 5px;
     color: white;
+}
+
+.remove:hover{
+    transform: scale(0.95);
 }
 
 .form{
@@ -132,6 +144,7 @@ h2{
     display: flex;
     justify-content: space-between;
     margin: 10px 10px 0 10px;
+    align-items: center;
 }
 
 input{
@@ -163,6 +176,11 @@ input{
 .button button{
     width: 60px;
     background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.button button:hover{
+    transform: scale(0.98);
 }
 
 .form.active{
