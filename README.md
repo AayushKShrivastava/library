@@ -1,7 +1,7 @@
 # Library
 Users can add and remove books from the library. They can also change the read status of a book. 
 
-![Screenshot](./images/library1.png)
+![Screenshot](./images/library.png)
 ![Screenshot](./images/library2.png)
 Deployed Linkk: https://aayushkshrivastava.github.io/library/
 
